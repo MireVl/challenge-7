@@ -44,6 +44,8 @@ const reducer = (state, action) => {
       } else {
         return { ...state };
       }
+    default:
+      throw new Error("Unknown action!");
   }
 };
 
